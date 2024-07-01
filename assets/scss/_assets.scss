@@ -1,0 +1,25 @@
+@import "_root";
+@import "_reset";
+@import "_light";
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+a.header__btn {
+    padding: 18px 30px;
+    margin: 0 10px;
+    background-color: transparent;
+    border: 2px solid $white1;
+    color: $white1;
+    border-radius: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    transition: all .3s ease;
+    &:hover {
+        color: #000;
+        background-color: $white1;
+        box-shadow: 0px 0px 15px 20px rgba(197,252,252,1);
+    }
+}

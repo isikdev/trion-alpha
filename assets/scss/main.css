@@ -1,0 +1,874 @@
+@charset "UTF-8";
+/* reset.scss */
+/* Сброс всех базовых стилей для большей унификации между браузерами */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Body settings */
+body {
+  line-height: 1;
+}
+
+/* List reset */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Blockquote and q reset */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container class */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+a.header__btn {
+  padding: 18px 30px;
+  margin: 0 10px;
+  background-color: transparent;
+  border: 2px solid #C5FCFC;
+  color: #C5FCFC;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+a.header__btn:hover {
+  color: #000;
+  background-color: #C5FCFC;
+  box-shadow: 0px 0px 15px 20px rgb(197, 252, 252);
+}
+
+/* reset.scss */
+/* Сброс всех базовых стилей для большей унификации между браузерами */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Body settings */
+body {
+  line-height: 1;
+}
+
+/* List reset */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Blockquote and q reset */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container class */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 60px;
+  margin: 0 auto;
+}
+
+.accordian-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.accordian-section .container {
+  max-width: 940px !important;
+}
+
+.accordian-section .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.accordian-section .accordion-item {
+  border: 1px solid var(--bordercolor);
+  filter: drop-shadow(0 0 22px rgba(0, 0, 0, 0.06));
+  border-radius: 0.8rem;
+  background: rgba(63, 63, 63, 0);
+  transition: all 0.7s ease;
+  transition-property: background;
+}
+
+.accordian-section .accordion-item .accordion-header,
+.accordian-section .accordion-item .accordion-header .accordion-button {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button {
+  padding: 1.6rem 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--textcolor);
+  transition: all 0.3s ease;
+  transition-property: font-weight, font-size, color;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button:active,
+.accordian-section .accordion-item .accordion-header .accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button::after {
+  background-image: url(https://www.zeeframes.com/images/icons/accordian-white.svg);
+  transition: all 0.5s ease;
+  transition-property: transform;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url(https://www.zeeframes.com/images/icons/accordiain-yellow.svg);
+  transform: rotate(0);
+}
+
+.accordian-section .accordion-item .accordion-body {
+  padding: 1.2rem 2.4rem 2.4rem;
+}
+
+.accordian-section .accordion-item .accordion-body .accordian-text {
+  font-family: Gotham;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.accordian-section .accordion-item:has(.collapse.show) {
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.06);
+}
+
+.main-color {
+  background: #3f3f3f !important;
+}
+
+.accordian-section .accordion-item .accordion-header .changeBtn-style {
+  font-family: "Gotham Pro";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #f37021;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button {
+  box-shadow: none !important;
+}
+
+* {
+  border: 1px solid red;
+}
+
+body {
+  background-color: #121315;
+  position: relative;
+}
+body::-webkit-scrollbar {
+  width: 14px;
+}
+body::-webkit-scrollbar-track {
+  background: #121315; /* цвет зоны отслеживания */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c5fcfc; /* цвет бегунка */
+}
+
+.header {
+  padding: 40px 0;
+  position: relative;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 60px;
+  z-index: 10000 !important;
+}
+.header__navbar-icons img {
+  width: 30px;
+  height: 30px;
+}
+.header__navbar-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5 ease;
+}
+.header__navbar-menu:hover {
+  opacity: 0.5;
+  color: #e0eeee;
+}
+.header__navbar-menu a {
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #e0eeee;
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 18px;
+}
+.header__navbar-menu a:hover {
+  color: #e0eeee;
+}
+.header__navbar-menu span {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #3B4446;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+.header__navbar-menu img {
+  width: 28px;
+  height: 28px;
+}
+.header__title {
+  margin: 70px 0;
+}
+.header__title h1 {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 110px;
+  line-height: 85px;
+  color: #e0eeee;
+  text-align: center;
+}
+.header__title p {
+  font-family: "Syne", sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  color: #e0eeee;
+  max-width: 40%;
+  text-align: center;
+  margin: 20px auto;
+}
+.header__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header__btn {
+  margin: 0 10px;
+}
+.header__link-portfolio a {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.header__link-portfolio a img {
+  width: 24px;
+  height: 24px;
+}
+.header__link-portfolio-video {
+  border-radius: 100rem;
+  width: 170px;
+  height: 70px;
+  overflow: hidden;
+  margin: 25px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.5s, width 0.5s, height 0.5s;
+}
+
+.close {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.close:hover {
+  opacity: 0.5;
+}
+.close a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Syne", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 10px;
+  color: #e0eeee;
+  transition: all 0.3s ease;
+}
+.close a:hover {
+  opacity: 0.5;
+  color: #e0eeee;
+}
+.close span {
+  padding: 5px;
+  background: #3B4446;
+  border-radius: 100%;
+}
+
+.menu__content {
+  position: relative;
+}
+.menu__wrapper {
+  position: fixed;
+  background-color: #121315;
+  z-index: 9000;
+  width: 100vw;
+  height: 100vh;
+  left: -120%;
+  top: 0;
+}
+.menu__wrapper-active {
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+.menu__wrapper-active-off {
+  left: -120%;
+  transition: all 0.5s ease;
+}
+.menu__content {
+  padding: 150px 70px;
+}
+.menu__content nav ul {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+.menu__content nav ul li {
+  list-style: none;
+  text-transform: capitalize;
+}
+.menu__content nav ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 102px;
+  line-height: 85px;
+  margin: 10px 0;
+  font-family: "Dirtyline 36Daysoftype 2022";
+  color: #e0eeee;
+}
+.menu__tel {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  justify-content: right;
+  text-align: right;
+}
+.menu__tel a {
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: "Syne", sans-serif;
+  font-size: 22px;
+  color: #fff;
+}
+
+.about {
+  padding: 100px 0;
+  color: #e0eeee;
+}
+.about__title h2 {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 180px;
+  line-height: 140px;
+  text-align: left;
+}
+.about__title p {
+  margin: 30px 0;
+  font-family: "Syne", sans-serif;
+  font-size: 60px;
+  line-height: 61px;
+}
+.about__subtitle {
+  max-width: 100%;
+  margin: 20px 0;
+}
+.about__subtitle p {
+  font-size: 24px;
+  font-family: "Syne", sans-serif;
+  margin: 12px 0 86px 0;
+}
+.about__subtitle a {
+  padding: 18px 30px;
+  margin: 22px 0;
+  background-color: transparent;
+  border: 2px solid #C5FCFC;
+  color: #e0eeee;
+  border-radius: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.cards {
+  padding: 100px 0;
+  color: #e0eeee;
+}
+.cards__content {
+  display: flex;
+  justify-content: center;
+}
+.cards__content-flex {
+  display: flex;
+  flex-direction: column;
+}
+.cards__content-flex:nth-child(2) {
+  margin: 90px 0;
+}
+.cards__item {
+  width: 410px;
+  height: 310px;
+  background-color: #17181b;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 36px;
+}
+.cards__item h2 {
+  font-family: "DM Mono", monospace;
+  font-size: 63px;
+}
+.cards__item h3 {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 29px;
+  text-transform: lowercase;
+}
+.cards .red {
+  padding: 50px 50px;
+}
+.cards .red:hover {
+  background-color: #c93202;
+}
+.cards .red h3 {
+  text-align: right;
+  padding: 90px 0px;
+}
+.cards .gray {
+  padding: 50px 50px;
+}
+.cards .gray:hover {
+  background-color: #c8d1d1;
+}
+.cards .gray h3 {
+  text-align: right;
+  padding: 90px 0px;
+}
+.cards .green {
+  padding: 50px 50px;
+}
+.cards .green:hover {
+  background-color: #a1c9b8;
+}
+.cards .green h3 {
+  text-align: right;
+  padding: 90px 0px;
+}
+.cards .yellow {
+  padding: 50px 50px;
+}
+.cards .yellow:hover {
+  background-color: #d8ca3d;
+}
+.cards .yellow h3 {
+  text-align: right;
+  padding: 90px 0px;
+}
+
+.partner {
+  color: #fff;
+}
+.partner__intro h2 {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 180px;
+  line-height: 140px;
+  text-align: left;
+}
+.partner__intro p {
+  margin: 30px 0;
+  font-family: "Syne", sans-serif;
+  font-size: 25px;
+  margin-right: auto;
+  text-align: right;
+}
+.partner__wrapper {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  white-space: nowrap;
+  max-width: 100vw;
+  scroll-snap-type: x mandatory;
+  scroll-direction: horizontal;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+.partner__wrapper::-webkit-scrollbar {
+  display: none;
+}
+.partner__inner {
+  display: flex;
+}
+.partner__card {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 10px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.partner__card .quote {
+  margin: 20px auto;
+  width: 96px;
+  height: 96px;
+}
+.partner__card img {
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  margin: 10px auto;
+  display: block;
+}
+.partner__card h3 {
+  font-size: 30px;
+}
+.partner__card h5 {
+  margin: 12px 0 60px 0;
+  font-size: 20px;
+  line-height: 15px;
+}
+.partner__card p {
+  margin: 0 auto;
+  text-align: center;
+}
+.partner__card a {
+  padding: 20px 45px;
+  margin: 30px auto;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #eb0000;
+  transition: all 0.3s ease !important;
+}
+.partner__card a:hover {
+  color: #fff;
+  background-color: #eb0000;
+  box-shadow: 0px 0px 15px 20px #eb0000;
+}
+.partner__text-card .partner__subtitle {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.social {
+  margin: 100px 0;
+  padding: 100px 0;
+  color: #fff;
+}
+.social__intro h2 {
+  font-family: "Dirtyline 36Daysoftype 2022";
+  font-size: 180px;
+  line-height: 140px;
+  text-align: center;
+}
+.social__link-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 720px;
+  width: 100%;
+  margin: 30px auto;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 22px;
+  transition: all 0.3s ease;
+}
+.social__link-item:hover {
+  max-width: 860px;
+  cursor: pointer;
+}
+.social__link-item:hover a {
+  color: #e0eeee;
+  opacity: 0.5;
+}
+.social__link-item:hover img {
+  animation: spin 1s linear infinite;
+}
+.social__link-item:hover ~ .social__link-item, .social__link-item:hover ~ .social__link-item:hover {
+  opacity: 0.2;
+}
+.social__link-item a {
+  text-decoration: none;
+  font-family: "Syne", sans-serif;
+  font-size: 66px;
+  color: #fff;
+}
+
+.accordion .accordian-text {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=main.css.map */

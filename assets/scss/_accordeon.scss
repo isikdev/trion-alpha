@@ -1,0 +1,89 @@
+.accordian-section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.accordian-section .container {
+    max-width: 940px !important;
+}
+
+.accordian-section .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.accordian-section .accordion-item {
+    border: 1px solid var(--bordercolor);
+    filter: drop-shadow(0 0 22px rgba(0, 0, 0, 0.06));
+    border-radius: 0.8rem;
+    background: rgba(63, 63, 63, 0);
+    transition: all 0.7s ease;
+    transition-property: background;
+}
+
+.accordian-section .accordion-item .accordion-header,
+.accordian-section .accordion-item .accordion-header .accordion-button {
+    background-color: transparent;
+    border: none;
+    outline: 0;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button {
+    padding: 1.6rem 2.4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--textcolor);
+    transition: all 0.3s ease;
+    transition-property: font-weight, font-size, color;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button:active,
+.accordian-section .accordion-item .accordion-header .accordion-button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button::after {
+    background-image: url(https://www.zeeframes.com/images/icons/accordian-white.svg);
+    transition: all 0.5s ease;
+    transition-property: transform;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    background-image: url(https://www.zeeframes.com/images/icons/accordiain-yellow.svg);
+    transform: rotate(0);
+}
+
+.accordian-section .accordion-item .accordion-body {
+    padding: 1.2rem 2.4rem 2.4rem;
+}
+
+.accordian-section .accordion-item .accordion-body .accordian-text {
+    font-family: Gotham;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.accordian-section .accordion-item:has(.collapse.show) {
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.06);
+}
+
+.main-color {
+    background: #3f3f3f !important;
+}
+
+.accordian-section .accordion-item .accordion-header .changeBtn-style {
+    font-family: "Gotham Pro";
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #f37021;
+}
+
+.accordian-section .accordion-item .accordion-header .accordion-button {
+    box-shadow: none !important;
+}
